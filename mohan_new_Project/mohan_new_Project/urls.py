@@ -16,9 +16,12 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from practicedjango_1 import views
+from Jobs_Assignment import views
 
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('hello',views.welcome),
+    path('hyd', views.hyd_jobs),
+    path('bang', views.bang_jobs),
+    path('pune',views.pune),
 ]
