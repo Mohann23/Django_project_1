@@ -1,4 +1,4 @@
-"""mohan_new_Project URL Configuration
+"""second_project URL Configuration
 
 The `urlpatterns` list routes URLs to views. For more information please see:
     https://docs.djangoproject.com/en/4.0/topics/http/urls/
@@ -15,10 +15,11 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from practicedjango_1 import views
-
+from Kritika_app import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('hello',views.welcome),
+    path('date/', views.timeinfo),
+    path('gm', views.timeinfo_2)
+
 ]
