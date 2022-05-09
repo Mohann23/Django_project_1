@@ -23,3 +23,4 @@ def datetimeinfo(request):
     msg = msg + "<h1> Now server time is: " + str(date) + "</h1>"
     return HttpResponse(msg)
 
+#We use this to display current server time and wish the guest
