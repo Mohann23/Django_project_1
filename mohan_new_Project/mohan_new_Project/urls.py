@@ -27,3 +27,4 @@ urlpatterns = {
     path('bang', ja.bang_jobs),
     path('pune', ja.pune),
 }
+
