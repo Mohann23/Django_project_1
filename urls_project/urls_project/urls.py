@@ -1,4 +1,4 @@
-"""mohan_new_Project URL Configuration
+"""urls_project URL Configuration
 
 The `urlpatterns` list routes URLs to views. For more information please see:
     https://docs.djangoproject.com/en/4.0/topics/http/urls/
@@ -15,18 +15,8 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path,include
-from practicedjango_1 import views as pd1
-from Jobs_Assignment import views as ja
-from do_your_work import views as dw
 
-
-
-urlpatterns = {
+urlpatterns = [
     path('admin/', admin.site.urls),
-    path('hello/', pd1.welcome),
-    path('hyd', ja.hyd_jobs),
-    path('bang', ja.bang_jobs),
-    path('pune', ja.pune),
-    path('work', dw.time_waste),
-}
-
+    path('urls_app/', include('urls_app.urls'))
+]
